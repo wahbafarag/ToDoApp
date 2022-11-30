@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: white;
+}
+.card{
+    background-color: #333;
+}
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}

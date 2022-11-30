@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <h1 class="text-center text-info display-3"> Welcom At ToDo App </h1>
+    <button id="btnModel" class="btn-block w-50 mx-auto  btn btn-info">Show Model</button>
+    <div class="container col-8 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div id="allTasks">
+
+                </div>
+                <div class="alert alert-danger " id="noTasks">
+                    <h6 class="text-center">No Task Added Yet</h6>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="modal" id="model" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add Task</h5>
+              <button type="button" onclick="showModel()" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="container col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Add Task</label>
+                                <input type="text" id="taskInput" placeholder="Add Task" class="form-control">
+                                <div id="invalidData" class="alert none alert-danger" >
+                                    Please Enter Valid Data
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                            </div>
+                            <button class="btn btn-block btn-info" id="addBtn">Add Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" onclick="showModel()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
